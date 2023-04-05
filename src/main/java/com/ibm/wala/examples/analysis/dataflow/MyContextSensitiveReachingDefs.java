@@ -27,7 +27,6 @@ import com.ibm.wala.dataflow.IFDS.PathEdge;
 import com.ibm.wala.dataflow.IFDS.TabulationDomain;
 import com.ibm.wala.dataflow.IFDS.TabulationResult;
 import com.ibm.wala.dataflow.IFDS.TabulationSolver;
-import com.ibm.wala.ipa.callgraph.AnalysisCache;
 import com.ibm.wala.ipa.callgraph.CGNode;
 import com.ibm.wala.ipa.callgraph.CallGraph;
 import com.ibm.wala.ipa.cfg.BasicBlockInContext;
@@ -46,7 +45,7 @@ import com.ibm.wala.util.intset.MutableSparseIntSet;
  * Computes interprocedural reaching definitions for static fields in a context-sensitive manner via {@link TabulationSolver
  * tabulation}.
  */
-public class ContextSensitiveReachingDefs {
+public class MyContextSensitiveReachingDefs {
 
   /**
    * used for resolving field references in putstatic instructions
@@ -63,7 +62,7 @@ public class ContextSensitiveReachingDefs {
    */
   private final ReachingDefsDomain domain = new ReachingDefsDomain();
 
-  public ContextSensitiveReachingDefs(CallGraph cg, AnalysisCache cache) {
+  public MyContextSensitiveReachingDefs(CallGraph cg) {
     this.cha = cg.getClassHierarchy();
     // we use an ICFGSupergraph, which basically adapts ExplodedInterproceduralCFG to the ISupergraph interface
     this.supergraph = ICFGSupergraph.make(cg);

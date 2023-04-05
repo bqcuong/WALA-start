@@ -29,7 +29,7 @@ This will pull in the WALA jars and build the sample code.
   * [Variants of a simple dataflow analysis](https://github.com/msridhar/WALA-start/tree/master/src/main/java/com/ibm/wala/examples/analysis/dataflow), including an [example driver](https://github.com/msridhar/WALA-start/blob/master/src/main/java/com/ibm/wala/examples/drivers/CSReachingDefsDriver.java)
   * [Simple driver](https://github.com/msridhar/WALA-start/blob/master/src/main/java/com/ibm/wala/examples/drivers/ScopeFileCallGraph.java) for building a [call graph](http://wala.sourceforge.net/wiki/index.php/UserGuide:CallGraph) from a [scope file](http://wala.sourceforge.net/wiki/index.php/UserGuide:AnalysisScope)
   * [`SourceDirCallGraph` Driver](https://github.com/wala/WALA-start/blob/master/src/main/java/com/ibm/wala/examples/drivers/SourceDirCallGraph.java) for constructing a call graph from a directory of source code.
-  
+  * `./gradlew -PmainClass=com.ibm.wala.examples.drivers.CSReachingDefsDriver run --args="-scopeFile ./example/scope.txt -mainClass LFoo"`
 See the [`drivers` folder](https://github.com/wala/WALA-start/tree/master/src/main/java/com/ibm/wala/examples/drivers) for other examples.
 
 License
