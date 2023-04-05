@@ -21,7 +21,7 @@ Clone the repository, and then run:
     
 This will pull in the WALA jars and build the sample code.
 
-### Run the example in `example` directory
+### Perform dataflow analysis for the code in `example` directory
 ```
 ./gradlew -PmainClass=com.ibm.wala.examples.drivers.CSReachingDefsDriver run --args="-scopeFile ./example/scope.txt -mainClass LFoo"
 ```
